@@ -1,3 +1,4 @@
+// Connecting to the HTTP server
 package main
 
 import (

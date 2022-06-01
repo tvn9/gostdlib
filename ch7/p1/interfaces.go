@@ -1,3 +1,4 @@
+// Resolving local IP addresses
 package main
 
 import (

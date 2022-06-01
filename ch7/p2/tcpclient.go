@@ -1,3 +1,4 @@
+// Connecting to the remote server
 package main
 
 import (
