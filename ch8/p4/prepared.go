@@ -55,7 +55,7 @@ func main() {
 }
 
 func createConnection() *sql.DB {
-	connStr := "postgres://tn:vnhcmmnmn@10.0.4.200:5432/?sslmode=disable"
+	connStr := "postgres://admin:password@18.35.33.50:5432/?sslmode=disable"
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
 		panic(err)
