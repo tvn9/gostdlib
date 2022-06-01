@@ -1,0 +1,50 @@
+{
+    "database.connections": {
+        "1654091629806": {
+            "host": "10.0.4.200",
+            "dbPath": "",
+            "port": 5432,
+            "user": "tn",
+            "protocol": null,
+            "authType": "default",
+            "password": "vnhcmmnmn",
+            "encoding": "utf8",
+            "clientKeyPath": null,
+            "clientCertPath": null,
+            "caPath": null,
+            "database": "",
+            "useSSL": false,
+            "useClearText": false,
+            "usingSSH": false,
+            "showHidden": true,
+            "includeDatabases": "",
+            "dbType": "PostgreSQL",
+            "encrypt": false,
+            "hideSystemSchema": true,
+            "readonly": false,
+            "savePassword": "Forever",
+            "group": null,
+            "sort": 12,
+            "isCluster": false,
+            "connectionUrl": "",
+            "srv": false,
+            "esAuth": "none",
+            "global": false,
+            "key": "1654091629806",
+            "timezone": "+00:00",
+            "ssh": {
+                "host": "",
+                "privateKeyPath": "",
+                "port": 22,
+                "username": "root",
+                "type": "password",
+                "connectTimeout": 10000,
+                "algorithms": {
+                    "cipher": []
+                }
+            },
+            "name": "pSQL-d01",
+            "connectionKey": "database.connections"
+        }
+    }
+}
