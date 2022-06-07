@@ -1,3 +1,4 @@
+// Reading and writing binary data
 package main
 
 import (

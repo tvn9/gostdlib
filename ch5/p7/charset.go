@@ -1,3 +1,4 @@
+// Reading/Writing a different charset
 package main
 
 import (

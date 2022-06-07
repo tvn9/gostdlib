@@ -24,7 +24,7 @@ func main() {
 	for sc.Scan() {
 		wr.WriteString(sc.Text())
 	}
-	fmt.Println(wr.String())
+	fmt.Println("Print to terminal\n", wr.String())
 
 	fmt.Println("### ReadFile ###")
 	// for smaller files

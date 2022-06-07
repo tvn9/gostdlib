@@ -1,3 +1,4 @@
+// Seeking a position within a file
 package main
 
 import (

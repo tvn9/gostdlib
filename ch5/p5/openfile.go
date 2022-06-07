@@ -1,3 +1,4 @@
+// Opening file by name
 package main
 
 import (
