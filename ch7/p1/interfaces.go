@@ -26,4 +26,13 @@ func main() {
 			}
 		}
 	}
+
+	ifAddrs, err := net.InterfaceAddrs()
+	if err != nil {
+		panic(err)
+	}
+
+	for i, addr := range ifAddrs {
+		fmt.Printf("Net %d, addr: %s\n", i, addr)
+	}
 }

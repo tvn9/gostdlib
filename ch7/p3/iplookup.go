@@ -8,7 +8,7 @@ import (
 
 func main() {
 	// Resole by IP address
-	addrs, err := net.LookupAddr("10.0.4.100")
+	addrs, err := net.LookupAddr("127.0.0.1")
 	if err != nil {
 		panic(err)
 	}
