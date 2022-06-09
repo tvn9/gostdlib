@@ -8,7 +8,7 @@ import (
 var names = []string{"Alan", "Joe", "Jack", "Ben", "Ellen", "Lisa", "Carl", "Steve", "Anton", "Yo"}
 
 type SyncList struct {
-	m     sync.Mutex
+	mutx  sync.Mutex
 	slice []interface{}
 }
 
@@ -20,14 +20,14 @@ func NewSyncList(cap int) *SyncList {
 }
 
 func (l *SyncList) Load(i int) interface{} {
-	l.m.Lock()
-	defer l.m.Unlock()
+	l.mutx.Lock()
+	defer l.mutx.Unlock()
 	return l.slice[i]
 }
 
 func (l *SyncList) Append(val interface{}) {
-	l.m.Lock()
-	defer l.m.Unlock()
+	l.mutx.Lock()
+	defer l.mutx.Unlock()
 	l.slice = append(l.slice, val)
 }
 
