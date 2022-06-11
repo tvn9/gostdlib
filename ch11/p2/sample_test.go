@@ -35,7 +35,7 @@ func compareWithHelper(expected, result string, t *testing.T) {
 
 func compare(expected, result string, t *testing.T) {
 	if expected != result {
-		t.Fatalf("Fail: Expected result %v, but go %v instead.", expected, result)
+		t.Fatalf("Fail: Expected result %v, but got %v instead.", expected, result)
 	}
 	t.Logf("OK: Expected result %v = %v", expected, result)
 }
