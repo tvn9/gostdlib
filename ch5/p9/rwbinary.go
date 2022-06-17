@@ -29,5 +29,4 @@ func main() {
 		panic(err)
 	}
 	fmt.Printf("String: %s\n", string(greeting))
-
 }

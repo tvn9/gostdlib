@@ -5,17 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8d2e56b-3df6-4d29-9bae-961c14b940d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gostdlib.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch5/p7/charset.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch5/p8/fileseek.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch5/p8/flatfile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch5/p9/rwbinary.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/tar/go.tar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/tar/readtar.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/tar/tarheader.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/tar/writetar.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/zip/go.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/zip/readzip.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/zip/writezip.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archive/zip/zipheader.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bufiopkg/scannercustom/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bufiopkg/scannerp2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bufiopkg/scannerp3/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bufiopkg/scannerp4/Test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bufiopkg/scannerp4/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iopkg/copybufp1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iopkg/copynp1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iopkg/copyp1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iopkg/copyp1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/iopkg/pipep1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p1/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p10/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p11/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p2/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p3/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p3/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p4/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p4/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p5/getexecute" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p5/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p6/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p7/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p8/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/p9/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vscode/datbase-client.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch5/p9/rwbinary.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch5/p9/rwbinary.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +77,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -61,9 +89,40 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tn&quot;
+    &quot;last_opened_file_path&quot;: &quot;/Users/tn/go/gostdlib/os/p4&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/os/p4" />
+      <recent name="$PROJECT_DIR$/os/p3" />
+      <recent name="$PROJECT_DIR$/os/p2" />
+      <recent name="$PROJECT_DIR$/iopkg/copyp1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/os/p1" />
+      <recent name="$PROJECT_DIR$/os/p2" />
+      <recent name="$PROJECT_DIR$/os" />
+      <recent name="$PROJECT_DIR$/archive/zip" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build gostdlib/os/p6" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gostdlib" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="gostdlib/os/p6" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/os/p6/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build gostdlib/os/p6" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TerminalProjectNonSharedOptionsProvider">
     <option name="startingDirectory" value="$USER_HOME$/projects/github.com/tvn9" />
@@ -82,7 +141,21 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/iopkg/copybufp1/main.go</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
