@@ -20,12 +20,12 @@ func main() {
 
 	fName := args[0]
 
-	// Reading file content using os.ReadFile
+	// Reading file content using tos.ReadFile
 	data, err := os.ReadFile(fName)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	// Writing file content to os.Stdout
+	// Writing file content to tos.Stdout
 	os.Stdout.Write(data)
 }

@@ -22,7 +22,7 @@ func main() {
 	// Wait function will wait till the process ends.
 	proc.Wait()
 
-	// After the process termninates the *os.ProcessState contains simple information
+	// After the process termninates the *tos.ProcessState contains simple information
 	// about the process run
 	fmt.Printf("PID: %d\n", proc.ProcessState.Pid())
 	fmt.Printf("Process took: %dms\n", proc.ProcessState.SystemTime()/time.Microsecond)

@@ -1,4 +1,4 @@
-// read input using os.Stdin.Read()
+// read input using tos.Stdin.Read()
 package main
 
 import (

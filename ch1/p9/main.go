@@ -17,7 +17,7 @@ func main() {
 	// channel.
 	sChan := make(chan os.Signal, 1)
 
-	// Notify will catch the given signals and send the os.Signal value through the sChan.
+	// Notify will catch the given signals and send the tos.Signal value through the sChan.
 	// If no signal specified in argument, all signals are matched.
 	signal.Notify(sChan, syscall.SIGHUP, syscall.SIGINT, syscall.SIGTERM, syscall.SIGQUIT)
 

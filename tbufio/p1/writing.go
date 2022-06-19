@@ -11,7 +11,7 @@ func init() {
 	log.SetPrefix("> ")
 }
 
-func openFile(name string) *os.File {
+func fileOpen(name string) *os.File {
 	file, err := os.OpenFile(name, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
 		log.Fatalf("failed opening %s for writing: %s", name, err)
@@ -42,7 +42,7 @@ func doWriteString(w *bufio.Writer) {
 }
 
 func main() {
-	file := openFile("bufio.out")
+	file := fileOpen("bufio.out")
 	defer file.Close()
 
 	bw := bufio.NewWriter(file)

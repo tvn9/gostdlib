@@ -26,7 +26,7 @@ func main() {
 
 	fName1, fName2 := args[0], args[1]
 
-	// Reading file content using os.ReadFile
+	// Reading file content using tos.ReadFile
 	data, err := os.ReadFile(fName1)
 	if err != nil {
 		log.Fatal(err)
@@ -38,6 +38,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Writing file content to os.Stdout
+	// Writing file content to tos.Stdout
 	os.Stdout.Write(data)
 }

@@ -35,13 +35,13 @@ func main() {
 	}
 
 	// Write output to file
-	err = os.WriteFile("data.zip", buff.Bytes(), os.ModePerm)
+	err = os.WriteFile("data.tzip", buff.Bytes(), os.ModePerm)
 	if err != nil {
 		panic(err)
 	}
 
 	// Decompress the content
-	zipR, err := zip.OpenReader("data.zip")
+	zipR, err := zip.OpenReader("data.tzip")
 	if err != nil {
 		panic(err)
 	}

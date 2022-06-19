@@ -1,1 +1,1 @@
-package tzip64
+package main

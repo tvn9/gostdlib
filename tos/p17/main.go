@@ -23,7 +23,7 @@ func main() {
 	dirName := args[0]
 
 	// ReadDir from cli-argument
-	// os.ReadDir returns a slice of fs.DirEntry, and error
+	// tos.ReadDir returns a slice of fs.DirEntry, and error
 	files, err := os.ReadDir(dirName)
 	if err != nil {
 		log.Fatal(err)
