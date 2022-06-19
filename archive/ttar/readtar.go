@@ -20,27 +20,27 @@ Typeflag: {{.Typeflag | printf "%q" }}
 Linkname: {{.Linkname}}
 Uname: {{.Uname}}
 Gname: {{.Gname}}
-Devmajo: {{.Devmajor}}
-Devminor: {{.AccessTime}}
+Devmajor: {{.Devmajor}}
+Devminor: {{.Devminor}}
+AccessTime {{.AccessTime}}
 ChangeTime: {{.ChangeTime}}
 `
-var CompileHeaderTemplate *template.Template
+var HeaderTmpl *template.Template
 
 func init() {
 	t := template.New("header")
-	CompileHeaderTemplate = template.Must(t.Parse(HeaderTemplate))
+	HeaderTmpl = template.Must(t.Parse(HeaderTemplate))
 }
 
 func printHeader(hdr *tar.Header) {
-	CompileHeaderTemplate.Execute(os.Stdout, hdr)
+	HeaderTmpl.Execute(os.Stdout, hdr)
 }
 
 func printContents(tr io.Reader, size int64) {
 	contents := make([]byte, size)
 	read, err := io.ReadFull(tr, contents)
-
 	if err != nil {
-		log.Fatalf("failed reading tar enetry: %s", err)
+		log.Fatalf("failed reading tar entry: %s", err)
 	}
 	if int64(read) != size {
 		log.Fatalf("read %d bytes but expected to read %d", read, size)
@@ -55,6 +55,7 @@ func main() {
 		log.Fatalf(msg, err)
 	}
 	defer file.Close()
+
 	tr := tar.NewReader(file)
 	for {
 		hdr, err := tr.Next()

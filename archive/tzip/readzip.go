@@ -15,12 +15,15 @@ func printFile(file *zip.File) error {
 		return fmt.Errorf(msg, file.Name, err)
 	}
 	defer frc.Close()
+
 	fmt.Fprintf(os.Stdout, "Contents of %s:\n", file.Name)
+
 	copied, err := io.Copy(os.Stdout, frc)
 	if err != nil {
 		msg := "failed reading zip entry %s for reading: %s"
 		return fmt.Errorf(msg, file.Name, err)
 	}
+
 	if uint64(copied) != file.UncompressedSize64 {
 		msg := "read %d bytes of %s but expected to read %d bytes"
 		return fmt.Errorf(msg, copied, file.UncompressedSize64)
