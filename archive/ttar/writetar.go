@@ -4,7 +4,6 @@ import (
 	"archive/tar"
 	"fmt"
 	"io"
-	"log"
 	"os"
 )
 
@@ -45,22 +44,4 @@ func addFile(filename string, tw *tar.Writer) error {
 		return fmt.Errorf(msg, copied, filename, stat.Size())
 	}
 	return nil
-}
-
-func main() {
-	flags := os.O_WRONLY | os.O_CREATE | os.O_TRUNC
-	file, err := os.OpenFile("go.tar", flags, 0644)
-	if err != nil {
-		log.Fatalf("failed opening tar for writing: %s", err)
-	}
-	defer file.Close()
-
-	tw := tar.NewWriter(file)
-	defer tw.Close()
-
-	for _, filename := range files {
-		if err := addFile(filename, tw); err != nil {
-			log.Fatalf("failed adding file %s to tar: %s", filename, err)
-		}
-	}
 }

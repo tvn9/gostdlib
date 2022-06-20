@@ -84,15 +84,3 @@ func doLineRead(r *bufio.Reader) {
 	}
 	log.Printf("After all that, %d bytes are buffered", r.Buffered())
 }
-
-func main() {
-	file := openFile("reading.go")
-	defer file.Close()
-
-	br := bufio.NewReader(file)
-	doPeek(br)
-	doStringRead(br)
-	doRuneRead(br)
-	doByteRead(br)
-	doLineRead(br)
-}

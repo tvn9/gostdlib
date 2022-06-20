@@ -11,7 +11,8 @@ import (
 const str = "Go, The Standard Library"
 const Times = 100
 
-func openFile(name string) *os.File {
+func openingFile(name string) *os.File {
+
 	file, err := os.OpenFile(name, os.O_WRONLY|os.O_CREATE|os.O_TRUNC, 0644)
 	if err != nil {
 		log.Fatalf("failed opening %s for writing: %s", name, err)
@@ -20,7 +21,7 @@ func openFile(name string) *os.File {
 }
 
 func BenchmarkBufio(b *testing.B) {
-	file := openFile(os.DevNull)
+	file := openingFile(os.DevNull)
 	defer file.Close()
 
 	bufferedFile := bufio.NewWriter(file)
@@ -34,7 +35,7 @@ func BenchmarkBufio(b *testing.B) {
 }
 
 func BenchmarkIO(b *testing.B) {
-	file := openFile(os.DevNull)
+	file := openingFile(os.DevNull)
 	defer file.Close()
 
 	for i := 0; i < b.N; i++ {

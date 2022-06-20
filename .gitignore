@@ -19,7 +19,9 @@
 
 # Go workspace file
 go.work
+.idea
 
 # TLS keys
 *.key
 *.crt
+

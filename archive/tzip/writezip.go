@@ -4,7 +4,6 @@ import (
 	"archive/zip"
 	"fmt"
 	"io"
-	"log"
 	"os"
 )
 
@@ -28,24 +27,4 @@ func addFile(filename string, zw *zip.Writer) error {
 		return fmt.Errorf("failed writing %s to zip: %s", filename, err)
 	}
 	return nil
-}
-
-func main() {
-	flags := os.O_WRONLY | os.O_CREATE | os.O_TRUNC
-	file, err := os.OpenFile("go.zip", flags, 0644)
-	if err != nil {
-		if err != nil {
-			log.Fatalf("failed opening zip for writing: %s", err)
-		}
-	}
-	defer file.Close()
-
-	zw := zip.NewWriter(file)
-	defer zw.Close()
-
-	for _, filename := range files {
-		if err := addFile(filename, zw); err != nil {
-			log.Fatalf("failed adding file %s to zip: %s", filename, err)
-		}
-	}
 }

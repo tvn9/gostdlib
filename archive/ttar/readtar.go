@@ -47,27 +47,3 @@ func printContents(tr io.Reader, size int64) {
 	}
 	fmt.Fprintf(os.Stdout, "Contents: \n\n%s", contents)
 }
-
-func main() {
-	file, err := os.Open("go.tar")
-	if err != nil {
-		msg := "failed opening archive, run `go run writetar.go` first: %s"
-		log.Fatalf(msg, err)
-	}
-	defer file.Close()
-
-	tr := tar.NewReader(file)
-	for {
-		hdr, err := tr.Next()
-		if err == io.EOF {
-			break
-		}
-
-		if err != nil {
-			log.Fatalf("failed getting next tar entry %s", err)
-		}
-
-		printHeader(hdr)
-		printContents(tr, hdr.Size)
-	}
-}

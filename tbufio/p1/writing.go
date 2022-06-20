@@ -40,17 +40,3 @@ func doWriteString(w *bufio.Writer) {
 	}
 	log.Printf("Wrote string in %d bytes", written)
 }
-
-func main() {
-	file := fileOpen("bufio.out")
-	defer file.Close()
-
-	bw := bufio.NewWriter(file)
-
-	// Remember to Flush!
-	defer bw.Flush()
-
-	doWriteByte(bw)
-	doWriteRune(bw)
-	doWriteString(bw)
-}
