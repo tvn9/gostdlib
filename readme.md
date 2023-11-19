@@ -1,3 +1,3 @@
 # Go Standard Library
 
-Learning to code using the go standard library.
+Learning to master the go standard library.
