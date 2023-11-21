@@ -1,9 +1,9 @@
-module gostdlib
+module githum.com/tvn9/gostdlib
 
-go 1.18
+go 1.21.4
 
 require (
-	github.com/lib/pq v1.10.6
-	golang.org/x/sync v0.0.0-20220601150217-0de741cfad7f
-	golang.org/x/text v0.3.7
+	github.com/lib/pq v1.10.9
+	golang.org/x/sync v0.5.0
+	golang.org/x/text v0.14.0
 )

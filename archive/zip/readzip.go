@@ -1,0 +1,2 @@
+// readzip.go
+package main
